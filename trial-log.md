@@ -53,4 +53,18 @@
 - Fix applied: this trial-log revision (genuine content, real results),
   re-commit, re-bundle v2, re-check — results below.
 
-## Bundle v2 + check v2 (real results)
+## Bundle v2 + check v2 (real results, 25 Nov ~12:02 WITA)
+
+- Bundle: `bundle-2-v2.tar.gz`, 165.159 bytes,
+  sha256 `306689714c07c1bb2161f9f2b4940a6e2f60e3508be33410a85baee228d2967d`.
+  0 usage rows attached (same expected reason as v1).
+- Check v2 (commit `2df1fc5f…`): **13 passed, 1 failed, 5 skipped**.
+  - thinking_revised now PASSES (trial-log.md from 2 messages).
+  - thinking_reproduces 75/80 lines, 93,7%.
+  - Only FAIL: thinking_priced (0 usage rows) — coordinator
+    re-bundles with `--muse-usage` after this run completes.
+- Final state for coordinator: HEAD `2df1fc5f…` (this edit adds one
+  more trial-log commit on top — see final verification below);
+  README 3 live badges, 0 static badges; `.makefun/owner.json`
+  present; About set (homepage + topics makefun/ai-agents/bounties
+  + description). NOT submitted — coordinator submits.
